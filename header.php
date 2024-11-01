@@ -1,3 +1,11 @@
+<?php
+require "config.php";
+require "model/db.php";
+require "model/category.php";
+$category = new Category;
+$getAllCate = $category->getAllCate();
+var_dump($getAllCate);
+?>
 <!DOCTYPE html>
 <html lang="en">
 

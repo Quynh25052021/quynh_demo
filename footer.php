@@ -1,3 +1,11 @@
+<?php
+require "config.php";
+require "model/db.php";
+require "model/category.php";
+$category = new Category;
+$getAllCate = $category->getAllCate();
+var_dump($getAllCate);
+?>
  <!-- Footer Start -->
  <div class="container-fluid bg-dark pt-5 px-sm-3 px-md-5 mt-5">
         <div class="row py-4">
